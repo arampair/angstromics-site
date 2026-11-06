@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Angstromics. DNA synthesis without chemistry: an enzyme and a light-controlled switch replace the reagent cycle.">
+<meta property="og:title" content="Angstromics">
+<meta property="og:description" content="DNA synthesis without chemistry.">
+<link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgAgMAAAAOFJJnAAAADFBMVEUKDRMKDRP09PUKDRM+RkBFAAAABHRSTlP8Bf+W86DGbQAAALFJREFUeNpNzT9Kw2AcxvFPfknxRVoQZ5HO7ZIjvCA4d8ktHDyBZHT0CDlKxo4eIUMPIHSJaBuHd3F7+D7/qs7y8nSfNTxkMyE+OPfCN7TCF/wKo9veIhYet4yRmHu2DqSBlVcCmzpNFvzAbkCMQB25iEuDN0oDNJjfCwnx34qRaSr1RO8SuSxX0ZbI2sFODFaxLqSN2RWmqPSuSdZlqLpwVy7DDXyq98vz0eYkOI114g8dnSpIFLeBAwAAAABJRU5ErkJggg==">
+<link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0AgMAAABAo+6hAAAADFBMVEUKDBIKDRP9/f2cnZ+TcG6+AAAABHRSTlP+AP//awwV8QAABENJREFUeNqtmD+O6zYQxj+OacAIjIDFvgDptkqR17gIkCoAj2Agb/t3hBzBR8gBUqTefYWPoCNskSKli3SbQgg2wSIrRSm0lvnnG4qCnyqZ+nn0zXA4Q9HcIbtejwCw3udPJB96OI7/eaihH8idSj8o95R+in59KtOvTfRzOBbpYxqeEv2U+fVJp4cmo+OhiP4zj3A8JmXTyaDMmI5HQ7qh9MDpV/DrSOlWoTtGD41CBw+EmUiultBHlX7N6QH61WR0V6DbjG4LdJfSakSih1Ih5PJiqRBysSXFHEkDJvPxC4xJjexJqFDZX94fqXBhsle/4F8qXJjs7/PC0wR0IvsnAP8x4UJkj2MHIpxUZGwAALfQKnLs5C74T+ymECdbdX6EONkAX2ca24luU1p++JkmltCJfsZvdFxoAp7wnI4OZzpxcqWnoWDJJRXpegmK5CHp9dXGlewKShry1g3g8xTntjc0pwAhK/gAuT/AkBCKGpKeBIUpOQEAXriSLEEtAMCREDLbf3N6tJ0FsD8AMJ6UNxrBP6YXZLZJCfzLw3xkWWhp9L4qzPySjO2q2Xax7baa7aiXX/wKAP98vN7LRlk5W9KrRG0y3fXxHrR2R4pQI2pzHD7DzKtDB/KoW2C6vVrJuT3dXu1luwDuiO3bRNHnjHej958CPVytJFsMq3O1ytfJIHw39x3f9SlKfG1MtgDGNrKroDsApuf7FKnrOSq9m4RvK+gWgIWnNULbzdQqaaYetaqkHR5ponAlj7VKVkGHbWbpYYzfcx1dShM1v00dvRnRnlYUWZImOX0bSN9U2baao7IkTXL6XLUde0htO23yhU38o3YeIF45GWCJYkSb+OcaJdsoTXYzdBclSlsRE6POvpD60Me6Qtpp31GkRlim5EVdEaIdOdBmotOO1AixWr6RRHFC0uSkHhyJeoDEEoUJ+fZeXQ0mTxP1M8mLetrEPnqX9nlf+kDbxtkm5c/t7joljtUHaswutm2rWZfYzt90uMpLU5j4eAJ8YrsrnA2+KfGVMkyasTsAuAsPtLepbRe/10xXos2ymPTlvabVluEhrhEOkKiRNtnaG6I6LfUt6m0uvVKaTpE4k52Wky/zJrXtqnYy9o22Spq8RImSNdCOVOI2VWKqdjL+bNvz+mBCdSZbDW38oj5LYkmD1hdCMtJWaes+mDE30SagXxJ6CJ2XYhzSPZyUCwgtXY7/8/FSUWxA2MvEn3iNCO0ZXh/sZepHz8y4wp+aGSc/hFrdTEhsVAftbHkNaTND+7jG+oq5udCuRvZE2xrZE21KUqaHggopNusktia7pPxZkQTsknd7FV6TnmYr0lxyx9WIRCvAzUUkotcKvee92M9+g4X0DaVvFJr6GQ0KZozfqHsIYjweimvIu4z+UNqf7NVJZ/Q61mL25R3eu4IOUvvulHulxt7pMFbvs6H33/wOAOsf8+D/D4+o8SYaiUHrAAAAAElFTkSuQmCC">
+<title>Angstromics</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,500;1,6..72,300&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+:root { padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px); }
+img { max-width:100%; }
+</style>
+<style>
+:root{--ground:#0A0D13;--panel:#11151E;--raise:#161B26;--ink:#E6E9EF;--dim:#8B93A6;--line:#222835;
+  --band:#070A10;--blocked:#E2603F;--open:#2FD4C4;--display:Newsreader,Georgia,serif;
+  --sans:"IBM Plex Sans",system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,monospace;
+  color-scheme:dark}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){
+  --ground:#F6F7F9;--panel:#FFFFFF;--raise:#F0F2F5;--ink:#121621;--dim:#5C6477;--line:#DEE2E9;
+  --band:#EDEFF3;--blocked:#C24A2A;--open:#0F9E90;color-scheme:light}}
+:root[data-theme="light"]{--ground:#F6F7F9;--panel:#FFFFFF;--raise:#F0F2F5;--ink:#121621;
+  --dim:#5C6477;--line:#DEE2E9;--band:#EDEFF3;--blocked:#C24A2A;--open:#0F9E90;color-scheme:light}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:clamp(16.5px,1.25vw,19.5px);
+  line-height:1.74;margin:0;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1240px;margin:0 auto;padding-left:max(clamp(16px,2vw,40px),env(safe-area-inset-left,0px));
+  padding-right:max(clamp(16px,2vw,40px),env(safe-area-inset-right,0px))}
+section{padding-block:clamp(40px,5vw,62px);border-top:1px solid var(--line)}
+section:first-of-type{padding-block:clamp(48px,9vh,104px)}
+section:nth-of-type(even){background:var(--band)}
+h1{font-family:var(--display);font-weight:300;font-size:clamp(2.3rem,6vw,4.3rem);
+  line-height:1.08;letter-spacing:-.012em;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:500;font-size:clamp(1.3rem,2vw,1.8rem);
+  margin:0 0 20px;text-wrap:balance}
+p{margin:0 0 20px}p:last-child{margin-bottom:0}
+.eyebrow{font-family:var(--mono);font-size:.69rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--dim);margin:0 0 20px}
+.lede{font-family:var(--display);font-weight:300;font-size:clamp(1.12rem,1.9vw,1.6rem);
+  line-height:1.5;margin-bottom:1em}
+br.wide{display:none}
+@media (min-width:640px){br.wide{display:inline}}
+.dim{color:var(--dim)}
+.rig{width:100%;background:var(--panel);border:1px solid var(--line);border-radius:4px;overflow:hidden}
+.stage{display:block;width:100%;height:auto;background:var(--raise)}
+.pair{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--line)}
+.pane{padding:14px 18px;display:flex;flex-direction:column;gap:3px;min-width:0}
+.pane+.pane{border-left:1px solid var(--line)}
+.pane .lab{font-family:var(--mono);font-size:.65rem;letter-spacing:.11em;text-transform:uppercase;color:var(--dim)}
+.pane b{font-family:var(--mono);font-weight:500;font-size:1.3rem;font-variant-numeric:tabular-nums;line-height:1.25}
+.pane .verd{font-family:var(--mono);font-size:.74rem}
+.e b,.e .verd{color:var(--blocked)}.z b,.z .verd{color:var(--open)}
+.controls{display:flex;gap:14px;align-items:center;padding:13px 18px;border-top:1px solid var(--line)}
+button{font-family:var(--mono);font-size:.74rem;letter-spacing:.09em;text-transform:uppercase;
+  background:var(--raise);color:var(--ink);border:1px solid var(--line);border-radius:3px;
+  padding:7px 15px;cursor:pointer;flex:none}
+button:hover{border-color:var(--dim)}
+.clock{font-family:var(--mono);font-size:.74rem;color:var(--dim);font-variant-numeric:tabular-nums;flex:none}
+input[type=range]{flex:1;min-width:0;accent-color:var(--dim);background:transparent}
+.steps{list-style:none;padding:0;margin:26px 0 34px;display:grid;
+  grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);
+  border:1px solid var(--line);border-radius:4px;overflow:hidden;width:100%}
+.steps li{background:var(--panel);padding:17px 20px 19px;position:relative;transition:background .3s}
+.steps li:before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:transparent;transition:background .3s}
+.steps li.on{background:var(--raise)}
+.steps li:nth-child(1).on:before{background:var(--ink)}
+.steps li:nth-child(2).on:before,.steps li:nth-child(3).on:before{background:var(--blocked)}
+.steps li:nth-child(4).on:before{background:var(--open)}
+.steps .n{font-family:var(--mono);font-size:.64rem;letter-spacing:.16em;color:var(--dim)}
+.steps h3{font-family:var(--display);font-weight:500;font-size:1.05rem;margin:7px 0 9px;letter-spacing:-.005em;color:var(--dim)}
+.steps p{font-size:.84rem;line-height:1.56;color:var(--dim);margin:0;max-width:none}
+.steps li.on h3,.steps li.on p{color:var(--ink)}
+@media (max-width:980px){.steps{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.steps{grid-template-columns:1fr}}
+.cmp{display:block;width:100%;height:auto;background:var(--panel);border:1px solid var(--line);
+  border-radius:4px;margin-top:6px}
+.ft{font-family:var(--display);font-size:15px;fill:var(--ink)}
+.fs{font-family:var(--mono);font-size:10.5px;fill:var(--dim)}
+.fa{font-family:var(--mono);font-size:10px;fill:var(--dim)}
+.fv{font-family:var(--mono);font-size:11.5px;font-weight:500}
+.trace{display:block;width:100%;height:auto;border-top:1px solid var(--line);background:var(--panel)}
+.caption{font-family:var(--mono);font-size:.78rem;line-height:1.75;color:var(--dim);margin-top:14px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 44px;font-family:var(--mono);font-size:.8rem}
+.facts div{display:flex;flex-direction:column;gap:3px}
+.facts span{color:var(--dim);font-size:.66rem;letter-spacing:.11em;text-transform:uppercase}
+.facts b{font-weight:500;font-variant-numeric:tabular-nums}
+.cta{font-family:var(--display);font-size:1.18rem;line-height:1.5;margin-top:28px;padding-top:24px;
+  border-top:1px solid var(--line)}
+.cta a{font-family:var(--sans);font-size:.95rem;margin-left:6px;white-space:nowrap}
+a{color:var(--open);text-underline-offset:3px}
+.lit{color:var(--ink)}
+.copied{font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;color:var(--dim);
+  margin-left:8px;white-space:nowrap;animation:cfade .2s ease-out}
+@keyframes cfade{from{opacity:0}to{opacity:1}}
+:focus-visible{outline:2px solid var(--open);outline-offset:3px}
+@media (max-width:520px){.pair{grid-template-columns:1fr}.pane+.pane{border-left:0;border-top:1px solid var(--line)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<section><div class="wrap">
+  <p class="eyebrow">Angstromics</p>
+  <h1>DNA synthesis without chemistry.</h1>
+  <p class="lede dim" style="margin-top:26px"><span id="ledeA">Ordering a gene takes a week.
+    All of biotech has to work around that wait.</span>
+    <br class="wide">The chemistry behind it
+    has not changed in forty years.</p>
+  <p class="lede dim">We use an enzyme and switch it on and off with
+    <span class="lit">light</span>, so gene synthesis is on demand and the only running costs are
+    photonics upkeep and the DNA itself rather than the four-step chemical cycle our competitors
+    require.</p>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Light is faster than chemistry</h2>
+  <p>TdT is the enzyme that adds DNA letters to the end of a strand. Left alone, it adds random
+    letters of DNA uncontrollably, so the entire field is trying to make it stop after just one.</p>
+  <p>We attach a light-sensitive molecule next to the active site. In its resting state, it reaches
+    the site and blocks it, preventing random addition. One flash of light bends the molecule into
+    an unfavourable orientation to the active site; it is now too short to block, and the enzyme
+    adds a letter. A second flash triggered by incorporation straightens it, closing the site again
+    until the next intended base arrives.</p>
+  <p style="margin-bottom:24px">We ran all-atom molecular dynamics simulations. The graphic
+    below shows how a single flash of light takes the inhibitor out of reach of the active
+    site.</p>
+  <div class="rig">
+    <svg class="stage" viewBox="0 42 880 288" role="img"
+      aria-label="Two panels of the same construct on the same polymerase surface. In each, a cysteine anchor on the left carries a linker, an azobenzene, a group marked R, and a carboxylate that chelates the catalytic magnesium ion at the active site. Left, the E isomer: the azobenzene is extended and the two carboxylate oxygens sit on the ion. Right, the Z isomer: the azobenzene is folded at the nitrogen-nitrogen double bond and the carboxylate falls well short of the ion.">
+      <rect x="0" y="282" width="1000" height="42" fill="var(--line)"/>
+      <line x1="440" y1="50" x2="440" y2="282" stroke="var(--line)" stroke-width="1"/>
+      <text x="868" y="320" font-family="IBM Plex Mono,monospace" font-size="11.5"
+            fill="var(--dim)" text-anchor="end">polymerase surface</text>
+      <text x="18" y="62" font-family="IBM Plex Mono,monospace" font-size="11"
+            fill="var(--dim)">E (trans) &#183; extended</text>
+      <text x="458" y="62" font-family="IBM Plex Mono,monospace" font-size="11"
+            fill="var(--dim)">Z (cis) &#183; folded</text>
+      <circle cx="366" cy="150" r="62" fill="var(--raise)"/>
+      <circle cx="366" cy="150" r="62" fill="var(--blocked)" opacity=".07"/>
+      <circle cx="366" cy="150" r="62" fill="none" stroke="var(--dim)" stroke-width="1.1" stroke-dasharray="4 5"/>
+      <text x="366" y="80" font-family="IBM Plex Mono,monospace" font-size="11"
+            fill="var(--dim)" text-anchor="middle">active site</text>
+      <circle cx="806" cy="150" r="62" fill="var(--raise)"/>
+      <circle cx="806" cy="150" r="62" fill="var(--open)" opacity=".07"/>
+      <circle cx="806" cy="150" r="62" fill="none" stroke="var(--dim)" stroke-width="1.1" stroke-dasharray="4 5"/>
+      <text x="806" y="80" font-family="IBM Plex Mono,monospace" font-size="11"
+            fill="var(--dim)" text-anchor="middle">active site</text>
+      <g id="ge"></g><g id="gz"></g>
+      <circle cx="366" cy="150" r="13" fill="var(--dim)"/>
+      <text x="366" y="154.4" text-anchor="middle" font-family="IBM Plex Sans,sans-serif"
+            font-size="11.5" font-weight="500" fill="var(--ground)">Mg</text>
+      <circle cx="806" cy="150" r="13" fill="var(--dim)"/>
+      <text x="806" y="154.4" text-anchor="middle" font-family="IBM Plex Sans,sans-serif"
+            font-size="11.5" font-weight="500" fill="var(--ground)">Mg</text>
+      <circle cx="78" cy="282" r="6" fill="var(--dim)"/>
+      <text x="78" y="304" font-family="IBM Plex Mono,monospace" font-size="11"
+            fill="var(--dim)" text-anchor="middle">Cys anchor</text>
+      <circle cx="518" cy="282" r="6" fill="var(--dim)"/>
+      <text x="518" y="304" font-family="IBM Plex Mono,monospace" font-size="11"
+            fill="var(--dim)" text-anchor="middle">Cys anchor</text>
+    </svg>
+    <div class="pair">
+      <div class="pane e"><span class="lab">E &middot; extended &middot; mean O to Mg</span>
+        <b id="de">0.000 nm</b><span class="verd">chelating &middot; blocked</span></div>
+      <div class="pane z"><span class="lab">Z &middot; folded &middot; mean O to Mg</span>
+        <b id="dz">0.000 nm</b><span class="verd">too short &middot; open</span></div>
+    </div>
+    <div class="controls">
+      <button id="play" type="button">Play</button>
+      <label for="scrub" style="position:absolute;left:-9999px">Trajectory position</label>
+      <input id="scrub" type="range" min="0" max="100" value="0" step="0.1">
+      <span class="clock" id="clock">0.00 ns</span>
+    </div>
+    <svg class="trace" viewBox="0 0 1120 150" role="img"
+      aria-label="Both trajectories. E fluctuates between 0.17 and 0.21 nanometres throughout; Z runs between 0.63 and 1.15.">
+      <g id="grid"></g>
+      <rect id="band" x="48" width="1054" fill="var(--blocked)" opacity=".07"/>
+      <polyline id="pz" fill="none" stroke="var(--open)" stroke-width="1.2" opacity=".75"/>
+      <polyline id="pe" fill="none" stroke="var(--blocked)" stroke-width="1.2" opacity=".75"/>
+      <line id="ph" y1="12" y2="114" stroke="var(--ink)" stroke-width="1"/>
+    </svg>
+  </div>
+  <p class="caption">The number is the mean distance of the two carboxylate oxygens from the
+    catalytic magnesium, read from all-atom molecular dynamics of both isomers. Each panel puts
+    the carboxylate at the distance that trajectory gives it, so the E construct moves 0.03 nm
+    over the run and the Z construct 0.53 nm, which is what the simulation says and all it
+    says. In E the carboxylate is chelating, so it sits symmetrically on the ion and the two
+    oxygens are equidistant; in Z it is not, so it is free to tilt and the two distances
+    differ, which is why the number is their mean. The
+    photoswitch is drawn to real azobenzene bond lengths and angles; R stands for the rest of
+    the ligand, which the geometry here does not turn on. The construct shown is
+    representative; the cysteine-to-magnesium distance is the figure&rsquo;s own scale.</p>
+</div></section>
+
+<section><div class="wrap">
+  <h2>The platform this enables</h2>
+  <div class="rig">
+    <svg class="stage" id="cycStage" viewBox="0 26 1000 394" style="color:var(--ink)" role="img"
+      aria-label="One zero-mode waveguide in cross-section: an aluminium-clad well on fused silica, with TdT at the bottom and its active site above. The field inside the well is evanescent, so only a label held at the bottom is seen, and the detector reads it through the silica. One base is in the flow at a time and the flow cycles A, C, T, G. A nucleotide is held in the site with its labelled phosphate tail on the magnesium; after the base joins the strand the label leaves and the fluorescence stops, which is the detection; a pulse of light then extends the tethered photoswitch across the site, the flow changes over to the next base, and a second pulse folds the switch back so that base can bind.">
+      <defs><linearGradient id="cycGlow" x1="0" y1="1" x2="0" y2="0">
+        <stop offset="0" stop-color="currentColor" stop-opacity=".055"/>
+        <stop offset=".42" stop-color="currentColor" stop-opacity=".022"/>
+        <stop offset="1" stop-color="currentColor" stop-opacity="0"/></linearGradient></defs>
+      <rect x="0" y="370" width="1000" height="50" fill="var(--band)"/>
+      <path d="M0 42 H132 L158 370 H0 Z" fill="var(--raise)" stroke="var(--line)" stroke-width="1"/>
+      <path d="M1000 42 H868 L842 370 H1000 Z" fill="var(--raise)" stroke="var(--line)" stroke-width="1"/>
+      <text x="67" y="200" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="11"
+            fill="var(--dim)">zero-mode</text>
+      <text x="67" y="216" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="11"
+            fill="var(--dim)">waveguide</text>
+      <text x="933" y="200" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="11"
+            fill="var(--dim)">one enzyme</text>
+      <text x="933" y="216" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="11"
+            fill="var(--dim)">per well</text>
+      <rect x="158" y="318" width="684" height="52" fill="var(--line)"/>
+      <g id="cycScene"></g>
+      <circle cx="292" cy="318" r="6" fill="var(--dim)"/>
+      <text x="292" y="306" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="11"
+            fill="var(--dim)">Cys</text>
+      <text x="172" y="398" font-family="IBM Plex Mono,monospace" font-size="11"
+            fill="var(--dim)">fused silica</text>
+      <text x="400" y="398" font-family="IBM Plex Mono,monospace" font-size="11"
+            fill="var(--dim)">detector</text>
+      <text x="712" y="398" text-anchor="end" font-family="IBM Plex Mono,monospace" font-size="11"
+            fill="var(--dim)">controller</text>
+    </svg>
+    <div class="controls">
+      <button id="cycPlay" type="button">Play</button>
+      <label for="cycScrub" style="position:absolute;left:-9999px">Cycle position</label>
+      <input id="cycScrub" type="range" min="0" max="100" value="0" step="0.1">
+      <span class="clock" id="cycRead">base A &middot; detect</span>
+    </div>
+    <svg class="trace" id="cycSig" viewBox="0 0 1000 140" role="img"
+      aria-label="The signal this runs on: fluorescence is high while a labelled nucleotide is held, falls the moment the label leaves, the closing pulse follows, and the opening pulse comes before the next base binds."></svg>
+  </div>
+  <ol class="steps">
+    <li><span class="n">01</span><h3>Detect</h3><p>A zero-mode waveguide sees the fluorescence
+      pulse end as the labelled polyphosphate leaves.</p></li>
+    <li><span class="n">02</span><h3>Switch</h3><p>The controller fires light at that site. The
+      tether contracts or extends within 250 &micro;s.</p></li>
+    <li><span class="n">03</span><h3>Block</h3><p>A tethered inhibitor occupies the active site
+      in the trans state. No further addition is possible.</p></li>
+    <li><span class="n">04</span><h3>Release</h3><p>Light switches it back to the cis state when
+      the next required base is delivered. No reagent wasted.</p></li>
+  </ol>
+
+  <p>The central problem in building DNA with an enzyme is that incorporation is stochastic:
+    the enzyme adds a base when it happens to, and the waiting time is random.</p>
+  <p style="margin-bottom:26px">If you cannot see and control in real time what each site is doing, the only option is a
+    fixed window: one clock for the whole chip, set at about the mean incorporation time. With a
+    well-chosen window the average site does add exactly one base, but the average is not the
+    distribution: in any window some sites add nothing and others add two or more. No choice
+    of window fixes that, and the best a single clock can do is get about a third of sites
+    right. That error compounds with every base, so most of the work moves downstream, into finding
+    and verifying the few molecules that came out right. Or what most of our competitors do:
+    use chemical caps and extensive wash cycles to try to tame stochastic incorporation,
+    importing the cost structure of chemical synthesis onto their enzymatic method.</p>
+  <svg class="cmp" viewBox="0 0 760 215" role="img"
+      aria-label="On one chip, an open loop yields an error-free copy only up to 16 bases. The closed loop reaches about 1,814 bases, past the length of a small gene.">
+    <text x="24" y="32" class="ft">Strand length at one error-free copy per chip</text>
+    <text x="168" y="81" class="fa" text-anchor="end">open loop</text>
+    <rect x="180" y="63" width="165.8" height="26" fill="var(--blocked)" opacity=".9" rx="3"/>
+    <text x="355.8" y="81" class="fv" fill="var(--blocked)">16 bases</text>
+    <text x="168" y="129" class="fa" text-anchor="end">ours: closed loop</text>
+    <rect x="180" y="111" width="448.1" height="26" fill="var(--open)" opacity=".9" rx="3"/>
+    <text x="638.1" y="129" class="fv" fill="var(--open)">1,814 bases</text>
+    <text x="592.5" y="155" class="fs" text-anchor="middle">a small gene</text>
+    <line x1="180" y1="160" x2="730" y2="160" stroke="var(--line)"/>
+    <line x1="180.0" y1="160" x2="180.0" y2="165" stroke="var(--line)"/>
+    <text x="180.0" y="179" class="fa" text-anchor="middle">1</text>
+    <line x1="317.5" y1="160" x2="317.5" y2="165" stroke="var(--line)"/>
+    <text x="317.5" y="179" class="fa" text-anchor="middle">10</text>
+    <line x1="455.0" y1="160" x2="455.0" y2="165" stroke="var(--line)"/>
+    <text x="455.0" y="179" class="fa" text-anchor="middle">100</text>
+    <line x1="592.5" y1="160" x2="592.5" y2="165" stroke="var(--line)"/>
+    <text x="592.5" y="179" class="fa" text-anchor="middle">1,000</text>
+    <line x1="730.0" y1="160" x2="730.0" y2="165" stroke="var(--line)"/>
+    <text x="730.0" y="179" class="fa" text-anchor="end">10,000</text>
+    <text x="455.0" y="200" class="fa" text-anchor="middle">strand length, bases</text>
+  </svg>
+  <p class="caption" style="margin-bottom:30px">Same chip, same enzyme. The open-loop limit is
+    fixed by the waiting-time statistics and no choice of window moves it. The closed-loop limit
+    is not statistical: it is set by how often the switch leaks while shut, which is an
+    engineering number. The bar shows our design target for the first construct.</p>
+  <p>We overcome that limitation with light. A zero-mode waveguide is a hole narrow enough to watch one enzyme at
+    a time, and it sees each base land. The instant a base goes in at one site, that site&rsquo;s
+    light goes out and the molecule folds back over the site. No site waits on the mean, because
+    every site runs on its own.</p>
+  <p style="font-family:var(--display);font-size:1.2rem;line-height:1.5">In other words, we read
+    every base of DNA that we write, and use every successful incorporation to queue the next.</p>
+  <p>Every other way of building DNA with an enzyme spends something on every base. A terminator
+    rides on the nucleotide and has to be stripped off by chemistry. A tethered polymerase is
+    itself the stop signal, and is released from the product each cycle. Either way the thing
+    doing the controlling is used up once per base, and that sets the cycle time, the yield
+    ceiling and the reagent bill. Our molecule is only switched. It survives every cycle, and what
+    the machine consumes is the building blocks and the light. Its limits are decoupled from the
+    chemistry: what bounds it instead is instrument latency and photocycle count.</p>
+  <p class="dim">Latency is a solved engineering problem. We are going to build it.</p>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Status</h2>
+  <div class="facts">
+    <div><span>Provisional</span><b>Filed 10 Sep 2026</b></div>
+    <div><span>Claims</span><b>249 / 17 groups</b></div>
+    <div><span>Simulation</span><b>Both isomers</b></div>
+    <div><span>Next</span><b>Wet-lab gating assay</b></div>
+  </div>
+  <p class="caption">The first experiment uses commercial TdT, a commercial bis-maleimide
+    photoswitch and a published single-cysteine construct. Nothing on the critical path
+    carries a vendor lead time.</p>
+  <p class="cta">Interested in the pre-seed round?
+    <a href="mailto:aidan@angstromics.com?subject=Angstromics%20pre-seed"
+      target="_blank" rel="noopener">aidan@angstromics.com</a></p>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Contact</h2>
+  <p>Aidan Christopher Rampair, founder.<br>
+    <a href="mailto:aidan@angstromics.com"
+      target="_blank" rel="noopener">aidan@angstromics.com</a></p>
+  <p class="caption">Constructs shown are illustrative. The optimised design is available
+    under NDA.</p>
+</div></section>
+
+<script>
+const D = {"cis":[0.753,0.764,0.841,0.841,0.86,0.85,0.804,0.846,0.852,0.818,0.729,0.827,0.712,0.73,0.873,0.742,0.718,0.786,0.786,0.81,0.628,0.687,0.697,0.687,0.692,0.686,0.733,0.68,0.73,0.689,0.71,0.907,0.946,1.063,0.921,0.88,0.986,0.945,1.093,1.02,0.98,0.95,0.926,0.89,1.026,0.934,0.961,1.008,1.018,0.967,0.974,1.007,0.977,1.032,1.005,0.945,0.869,0.929,1.006,1.039,1.073,1.07,1.092,1.024,1.09,1.136,1.024,1.012,1.067,1.027,0.978,0.957,0.829,0.945,0.926,0.898,0.771,0.918,0.874,1.027,0.918,0.82,0.886,0.861,0.772,0.673,0.711,0.927,0.963,0.986,0.87,0.836,0.863,0.879,0.858,0.741,0.775,0.798,0.832,0.827,0.795,0.79,0.795,0.836,0.77,0.71,0.777,0.767,0.839,0.781,0.799,0.962,0.967,0.795,0.88,0.903,0.909,0.998,0.936,0.914,0.886,0.816,0.878,0.87,0.946,0.859,0.993,0.926,1.118,1.006,0.887,1.038,0.967,0.969,0.922,0.876,0.997,0.886,0.944,0.869,0.839,0.901,0.915,0.909,0.903,0.949,0.95,0.875,0.951,0.973,1.055,0.923,0.87,0.88,0.858,0.954,0.864,0.824,0.963,0.93,0.87,0.851,0.966,1.021,0.94,0.991,0.968,0.79,0.876,0.905,0.908,0.896,0.828,0.863,0.911,0.847,0.878,0.884,0.921,0.836,0.901,0.913,0.821,0.835,0.823,0.804,0.949,1.062,0.993,1.019,0.982,1.013,0.99,0.951,1.069,1.091,0.94,0.905,0.982,1.023,1.063,1.083,1.066,1.051,1.093,1.106,1.121,1.047,1.058,1.153,1.068,1.117,1.026,1.026,0.993,0.982,1.136,1.08,1.096,0.985,1.098,1.033,1.092,1.063,1.086,1.056,1.065,1.045,1.016,1.011,1.031,1.069,0.994,1.04,1.05,0.992,1.11,1.067,1.087,1.072,0.969,1.042,1.08,1.05],"trans":[0.181,0.179,0.181,0.178,0.177,0.182,0.183,0.177,0.184,0.183,0.18,0.178,0.185,0.178,0.177,0.175,0.176,0.177,0.183,0.185,0.185,0.181,0.18,0.177,0.179,0.177,0.179,0.184,0.177,0.2,0.194,0.181,0.176,0.192,0.184,0.186,0.175,0.177,0.182,0.181,0.178,0.182,0.181,0.179,0.192,0.184,0.185,0.19,0.187,0.19,0.181,0.183,0.185,0.187,0.178,0.188,0.184,0.184,0.185,0.188,0.183,0.176,0.181,0.183,0.186,0.183,0.18,0.191,0.177,0.184,0.179,0.178,0.186,0.174,0.184,0.185,0.188,0.189,0.18,0.187,0.181,0.186,0.176,0.185,0.186,0.194,0.181,0.182,0.178,0.189,0.194,0.178,0.175,0.185,0.184,0.18,0.182,0.188,0.177,0.178,0.189,0.172,0.185,0.181,0.181,0.187,0.187,0.183,0.179,0.178,0.176,0.19,0.181,0.182,0.184,0.184,0.181,0.18,0.188,0.187,0.184,0.191,0.188,0.179,0.192,0.176,0.184,0.178,0.183,0.18,0.178,0.187,0.192,0.177,0.185,0.18,0.18,0.189,0.186,0.178,0.185,0.189,0.184,0.176,0.173,0.179,0.186,0.185,0.181,0.178,0.182,0.183,0.192,0.183,0.182,0.187,0.18,0.178,0.184,0.192,0.173,0.186,0.181,0.186,0.18,0.186,0.195,0.189,0.183,0.197,0.191,0.194,0.189,0.19,0.185,0.185,0.184,0.183,0.2,0.2,0.178,0.189,0.176,0.175,0.205,0.192,0.181,0.181,0.187,0.175,0.187,0.191,0.186,0.193,0.175,0.186,0.183,0.184,0.196,0.191,0.185,0.2,0.186,0.175,0.194,0.202,0.193,0.202,0.197,0.187,0.181,0.181,0.181,0.192,0.192,0.192,0.195,0.186,0.185,0.189,0.186,0.186,0.185,0.203,0.186,0.186,0.189,0.186,0.189,0.19,0.18,0.183,0.189,0.188,0.181,0.189,0.19,0.179,0.182,0.18,0.187,0.192,0.181,0.189]}, N = D.cis.length, DMAX = 1.6, NS = 5.0, COORD_NM = 0.25;
+const PW = 440;                                // panel width; each construct stays inside one
+const AE={x:78,y:282},  SE={x:366,y:150};      // E panel: Cys anchor, catalytic Mg
+const AZ_={x:518,y:282}, SZ={x:806,y:150};     // Z panel
+const SPAN = Math.hypot(SE.x-AE.x, SE.y-AE.y), R_NM = 1.62, PPN = SPAN/R_NM, K = PPN/10;
+const D2R = Math.PI/180, SURF = AE.y - 4;
+
+// Azobenzene drawn to real bond ratios: C1-C4 2.80 A, C-N 1.42 A, N=N 1.25 A.
+// Neither isomer is a straight rod. trans: C-N=N 120 deg, C-N=N-C dihedral anti, so the
+// rings sit on opposite sides of the N=N and the 4,4' span is 9.13 A, not the 9.69 A a
+// straight chain would give. cis: C-N=N 122 deg, dihedral syn, both rings on one side.
+const D60 = 60*D2R, NPa = 1.42 + 2*1.40;
+const AZ44 = Math.hypot(1.25 + 2*NPa*Math.cos(D60), 2*NPa*Math.sin(D60));   // 9.13 A
+const RR = 1.40*K, CN = 1.42*K, NN = 1.25*K;
+const D58 = 58*D2R, CO = Math.cos(D58), SI = Math.sin(D58);
+const AZC = 2*(NN/2 + (CN+2*RR)*CO);                      // folded 4,4' span
+
+// glyph in local coords: X along the 4,4' axis, Y toward the fold
+// trans is built with the N=N on x, each chain bent 120 deg at its nitrogen, then turned so
+// the 4,4' axis is local X. The two chains are related by inversion, not mirror, so with the
+// para carbons on the baseline the rings must take opposite sides of it: that is what anti
+// means and there is no drawing of it where they share a side.
+const TRANS = (()=>{
+  const v = [Math.cos(Math.PI-D60), -Math.sin(Math.PI-D60)];   // n1 -> c1
+  const n1 = [-NN/2, 0], n2 = [NN/2, 0];
+  const up = t => [n1[0]+v[0]*t, n1[1]+v[1]*t];
+  const dn = t => [n2[0]-v[0]*t, n2[1]-v[1]*t];
+  const G = { n1:n1, n2:n2, c1:up(CN), r1:up(CN+RR), p1:up(CN+2*RR),
+                            c2:dn(CN), r2:dn(CN+RR), p2:dn(CN+2*RR) };
+  const ax = Math.atan2(G.p2[1]-G.p1[1], G.p2[0]-G.p1[0]);
+  const c = Math.cos(-ax), s = Math.sin(-ax);
+  for(const k in G) G[k] = [G[k][0]*c - G[k][1]*s, G[k][0]*s + G[k][1]*c];
+  G.half = Math.hypot(G.p2[0]-G.p1[0], G.p2[1]-G.p1[1])/2;
+  return G;
+})();
+const CIS = (()=>{ const h=AZC/2, P=t=>[-h+CO*t, SI*t], M=t=>[h-CO*t, SI*t]; return {
+  p1:P(0), r1:P(RR), c1:P(2*RR), n1:P(2*RR+CN),
+  n2:M(2*RR+CN), c2:M(2*RR), r2:M(RR), p2:M(0), half:h }; })();
+
+// The ligand end as the deck draws it: the inhibitor carboxylate chelating the catalytic
+// magnesium. Everything between the photoswitch and that carboxylate is drawn as R. None of
+// it bears on the geometry this figure is about, and spelling it out would make the construct
+// longer than the distance it has to span.
+const COx = 1.25*K, OCO = 120*D2R, ARN = 1.55*K, RC = 1.55*K;
+// The base linker is two real bonds with a tetrahedral atom between them: sulfur to carbon,
+// then carbon to the ring, that second bond continuing the ring axis. Holding that angle at
+// 109.5 makes the whole base rigid, which is what stops it swinging between frames.
+// Base linker: sulfur to carbon, carbon to the ring, that second bond continuing the ring
+// axis, with the tetrahedral angle held at the carbon between them.
+const LB2 = 1.82*K, LB1 = 1.51*K, TET = 109.5*D2R, BEND = 116*D2R, MINB = 102*D2R;
+// The trace reports the mean of the two chelator-to-Mg distances. With the carboxylate
+// pointing at the ion both oxygens are equidistant, so that mean fixes the C-Mg distance.
+const cMg = dm => { const b = -2*COx*Math.cos(OCO/2), q = COx*COx - dm*dm;
+  return (-b + Math.sqrt(Math.max(0, b*b - 4*q)))/2; };
+// Cis is the open state, where the carboxylate is not chelating anything. Nothing there has
+// to point at the ion, so the bite is free to tilt and the mean of the two oxygen distances
+// still lands on the number from the trace. Writing both oxygens as one radius about R turns
+// that mean into a single equation in the tilt.
+const RHO = Math.hypot(RC + COx*Math.cos(60*D2R), COx*Math.sin(60*D2R));
+const DEL = Math.atan2(COx*Math.sin(60*D2R), RC + COx*Math.cos(60*D2R));
+const CHI = 118*D2R;                            // fallback target for the angle at R
+let AIM = CHI;                                  // what trans turns out to hold it at
+const hSum = (D, t) => Math.sqrt(Math.max(0, RHO*RHO + D*D - 2*RHO*D*Math.cos(t - DEL)))
+                     + Math.sqrt(Math.max(0, RHO*RHO + D*D - 2*RHO*D*Math.cos(t + DEL)));
+// That sum is smallest at t = 0, the symmetric pose, and climbs monotonically to t = pi, so
+// one bisection gives the tilt. t = 0 reproduces cMg exactly, which is why trans keeps it.
+// That sum is smallest at t = 0, the symmetric pose, and climbs monotonically to t = pi, so
+// one bisection gives the tilt a given reach needs. t = 0 reproduces cMg exactly, which is
+// why trans keeps the symmetric head and only cis tilts.
+const tFor = (D, tgt) => {
+  if(hSum(D,0) > tgt || hSum(D,Math.PI) < tgt) return null;
+  let lo = 0, hi = Math.PI;
+  for(let k=0;k<40;k++){ const md=(lo+hi)/2; if(hSum(D,md) < tgt) lo=md; else hi=md; }
+  return (lo+hi)/2; };
+const GKEYS = ["p1","c1","r1","n1","n2","c2","r2","p2"];
+
+let i=0, playing=false, timer=null, held=false;
+const $ = id => document.getElementById(id);
+const hex=(c,r,rot)=>{ let p=""; for(let k=0;k<6;k++){ const t=rot+k*Math.PI/3;
+  p+=(k?" ":"")+(c[0]+r*Math.cos(t)).toFixed(1)+","+(c[1]+r*Math.sin(t)).toFixed(1); } return p; };
+const seg=(a,b,t1,t2)=>{ const dx=b[0]-a[0], dy=b[1]-a[1], L=Math.hypot(dx,dy)||1;
+  return [[a[0]+dx/L*t1, a[1]+dy/L*t1],[b[0]-dx/L*t2, b[1]-dy/L*t2]]; };
+// Flexible linker, drawn the way a chain is drawn: straight bonds with a turn at the atom
+// between them. The first bond leaves the ring along its axis, as a para substituent must.
+const LNK=(a,b,u)=>{ const c=0.55*Math.hypot(b[0]-a[0], b[1]-a[1]);
+  const v=[b[0]+u[0]*c, b[1]+u[1]*c];
+  return `${a[0].toFixed(1)},${a[1].toFixed(1)} ${v[0].toFixed(1)},${v[1].toFixed(1)} ${b[0].toFixed(1)},${b[1].toFixed(1)}`; };
+
+const LOCK = {};                      // mirror, base kink, elbow, tilt side: once per panel
+const TRACK = {};                     // every frame solved once, in order, at load
+const EE = a => [Math.cos(a), Math.sin(a)];
+
+// Everything from the cysteine out to R is one rigid body once the mirror and the base kink
+// are chosen: the base angle is exactly tetrahedral and R is exactly para, so phi, the
+// direction the first bond leaves the sulfur, only rotates it.
+function chainAt(A, cis, m, sg, phi){
+  const G = cis?CIS:TRANS, ROD = 2*G.half;
+  const a1L = Math.atan2(G.p1[1]-G.c1[1], G.p1[0]-G.c1[0]);
+  const a2L = Math.atan2(G.p2[1]-G.c2[1], G.p2[0]-G.c2[0]);
+  const bend = sg*TET, aV = Math.PI + bend;
+  const th0 = bend - m*a1L, w0 = th0 + m*a2L;
+  const e0 = EE(phi), v1 = [A.x+LB2*e0[0], A.y+LB2*e0[1]];
+  const ep = EE(phi+aV), P1 = [v1[0]+LB1*ep[0], v1[1]+LB1*ep[1]];
+  const th = phi + th0, ct = Math.cos(th), st = Math.sin(th);
+  const P2 = [P1[0]+ROD*ct, P1[1]+ROD*st];
+  const w = phi + w0, ew = EE(w);
+  const T = ([X,Y]) => { const x=X-G.p1[0], y=m*Y-m*m*G.p1[1];
+    return [P1[0]+x*ct-y*st, P1[1]+x*st+y*ct]; };
+  return {G:G, T:T, w:w, v1:v1, P1:P1, P2:P2,
+          Rn:[P2[0]+ARN*ew[0], P2[1]+ARN*ew[1]]};
+}
+// |R - anchor| and its bearing at phi = 0, measured off the body itself so the closed-form
+// solve below cannot drift from the geometry it is solving for.
+const UCACHE = {};
+const chainU = (cis,m,sg) => { const key = (cis?"c":"t")+m+","+sg;
+  if(!UCACHE[key]){ const c = chainAt({x:0,y:0}, cis, m, sg, 0);
+    UCACHE[key] = {Lu: Math.hypot(c.Rn[0], c.Rn[1]), aU: Math.atan2(c.Rn[1], c.Rn[0])}; }
+  return UCACHE[key]; };
+
+// Containment, the surface, self-overlap and the bond angle at R. chel adds the tests that
+// only mean something while the carboxylate is chelating: both oxygens between the carbon
+// and the ion, and the ion outside the bite. Without those the solver can satisfy the mean
+// by driving the metal through the carbon.
+function vet(C, S, Cc, Oa, Ob, xlo, xhi, minb, chel){
+  const G = C.G, T = C.T;
+  let lowy = -1e9;
+  for(const q of GKEYS.map(k=>T(G[k])).concat([C.v1, C.Rn, Cc, Oa, Ob])){
+    if(q[0]<xlo || q[0]>xhi)return null;
+    lowy = Math.max(lowy, q[1]);
+  }
+  const r1=T(G.r1), r2=T(G.r2), c1=T(G.c1), c2=T(G.c2);
+  if(Math.max(lowy, r1[1]+RR, r2[1]+RR) > SURF)return null;
+  if(Math.min(r1[0],r2[0])-RR < xlo || Math.max(r1[0],r2[0])+RR > xhi)return null;
+  const dC = Math.hypot(Cc[0]-S.x, Cc[1]-S.y);
+  if(dC < 1.80*K)return null;
+  if(chel){
+    const dA = Math.hypot(Oa[0]-S.x, Oa[1]-S.y), dB = Math.hypot(Ob[0]-S.x, Ob[1]-S.y);
+    if(dA >= dC || dB >= dC)return null;
+    if(Math.hypot(C.Rn[0]-S.x, C.Rn[1]-S.y) <= dC)return null;
+  }
+  // Self-overlap is scored, not vetoed, except for clear contact: a hard cut everywhere is a
+  // cliff in the search, and the pose the eye expects gets thrown out for a distant one. In
+  // the open state the two oxygens swing with the tilt, so they are checked as well.
+  const arms = chel ? [[C.Rn,Cc]] : [[C.Rn,Cc],[Cc,Oa],[Cc,Ob]];
+  const hard = chel ? 0.80 : 1.04, soft = chel ? 1.30 : 1.44;
+  let ovpen = 0;
+  for(const c of [r1,r2]) for(const a of arms){
+    const vx=a[1][0]-a[0][0], vy=a[1][1]-a[0][1], L2=vx*vx+vy*vy||1;
+    let t=((c[0]-a[0][0])*vx+(c[1]-a[0][1])*vy)/L2; t=Math.max(0,Math.min(1,t));
+    const near=Math.hypot(a[0][0]+t*vx-c[0], a[0][1]+t*vy-c[1])/RR;
+    if(near < hard)return null;
+    if(near < soft){ const g=soft-near; ovpen += 7*g*g; }
+  }
+  // The angle at R is a real bond angle, not a preference. Left soft it collapses acute in
+  // cis, which swings the carboxylate back onto the aryl ring.
+  const bnd = Math.acos(Math.min(1, Math.max(-1,
+    ((C.P2[0]-C.Rn[0])*(Cc[0]-C.Rn[0]) + (C.P2[1]-C.Rn[1])*(Cc[1]-C.Rn[1]))
+    /((Math.hypot(C.P2[0]-C.Rn[0],C.P2[1]-C.Rn[1])||1)
+     *(Math.hypot(Cc[0]-C.Rn[0],Cc[1]-C.Rn[1])||1)))));
+  if(bnd < (minb===undefined?MINB:minb))return null;
+  return {ovpen:ovpen, bnd:bnd, r1:r1, r2:r2, c1:c1, c2:c2};
+}
+
+// Trans, the blocked state: the carboxylate is chelating, so it is bidentate and symmetric,
+// the two oxygens are equidistant, and the mean pins the carbon-to-ion distance. That pins
+// |R - ion| too, so phi closes in one step rather than being searched.
+function poseAt(A, S, dnm, cis, xlo, xhi, m, sg, pb, ov, minb){
+  const Rc0 = cMg(dnm*PPN), tgtD = Rc0 + RC;
+  const U = chainU(cis,m,sg), Lu = U.Lu, aU = U.aU;
+  const Wx = S.x-A.x, Wy = S.y-A.y, Lw = Math.hypot(Wx,Wy);
+  const cs = (Lu*Lu + Lw*Lw - tgtD*tgtD)/(2*Lu*Lw);
+  if(cs < -1 || cs > 1) return null;
+  const phi = Math.atan2(Wy,Wx) - aU + pb*Math.acos(cs);
+  const C = chainAt(A, cis, m, sg, phi), Rn = C.Rn;
+  const dRn = Math.hypot(Rn[0]-S.x, Rn[1]-S.y)||1;
+  const ux = (Rn[0]-S.x)/dRn, uy = (Rn[1]-S.y)/dRn;
+  const Cc = [S.x+Rc0*ux, S.y+Rc0*uy];
+  const gg = Math.atan2(Cc[1]-Rn[1], Cc[0]-Rn[0]);
+  const ea = EE(gg-OCO/2), eb = EE(gg+OCO/2);
+  const Oa = [Cc[0]+COx*ea[0], Cc[1]+COx*ea[1]];
+  const Ob = [Cc[0]+COx*eb[0], Cc[1]+COx*eb[1]];
+  const v = vet(C, S, Cc, Oa, Ob, xlo, xhi, minb, true);
+  if(!v) return null;
+  const psi = Math.atan2(Math.sin(gg-C.w), Math.cos(gg-C.w));
+  const dev = Math.PI - Math.abs(psi) - BEND;
+  return {sc: 1.4*dev*dev + v.ovpen, phi:phi, bnd:v.bnd, m:m, sg:sg,
+          v1:C.v1, P1:C.P1, P2:C.P2, Rn:Rn, Cc:Cc, Oa:Oa, Ob:Ob,
+          r1:v.r1, r2:v.r2, c1:v.c1, c2:v.c2, na:C.T(C.G.n1), nb:C.T(C.G.n2)};
+}
+// Cis, the open state: nothing there is chelating, so the carboxylate need not point at the
+// ion and has no symmetry to keep. The bite tilts instead, which is what frees the bond angle
+// at R and stops the head swinging onto the aryl ring to make the number work.
+//
+// The tilt is not searched frame by frame. Searching it hops: several tilts put the mean on
+// the same number, they place the construct in quite different poses, and which one wins can
+// change from one frame to the next. Instead the reach the chain takes is affine in the
+// distance the trace reports and the tilt follows from it, so the pose is a smooth function
+// of the data and the construct moves only as much as the trajectory does.
+function cisPose(A, S, dnm, xlo, xhi, L, minb){
+  const tgt = 2*dnm*PPN, D = L.s*dnm*PPN + L.c*K;
+  const t = tFor(D, tgt);
+  if(t === null) return null;
+  const U = chainU(true,L.m,L.sg), Lu = U.Lu, aU = U.aU;
+  const Wx = S.x-A.x, Wy = S.y-A.y, Lw = Math.hypot(Wx,Wy);
+  const cs = (Lu*Lu + Lw*Lw - D*D)/(2*Lu*Lw);
+  if(cs < -1 || cs > 1) return null;
+  const phi = Math.atan2(Wy,Wx) - aU + L.pb*Math.acos(cs);
+  const C = chainAt(A, true, L.m, L.sg, phi), Rn = C.Rn;
+  const al = Math.atan2(S.y-Rn[1], S.x-Rn[0]) + L.sd*t;
+  const Cc = [Rn[0]+RC*Math.cos(al),      Rn[1]+RC*Math.sin(al)];
+  const Oa = [Rn[0]+RHO*Math.cos(al-DEL), Rn[1]+RHO*Math.sin(al-DEL)];
+  const Ob = [Rn[0]+RHO*Math.cos(al+DEL), Rn[1]+RHO*Math.sin(al+DEL)];
+  const v = vet(C, S, Cc, Oa, Ob, xlo, xhi, minb, false);
+  if(!v) return null;
+  return {t:t, phi:phi, bnd:v.bnd, ovpen:v.ovpen, m:L.m, sg:L.sg, pb:L.pb, sd:L.sd,
+          v1:C.v1, P1:C.P1, P2:C.P2, Rn:Rn, Cc:Cc, Oa:Oa, Ob:Ob,
+          r1:v.r1, r2:v.r2, c1:v.c1, c2:v.c2, na:C.T(C.G.n1), nb:C.T(C.G.n2)};
+}
+// The turn at R is a bond angle. It should be the same angle in both panels and it should
+// hold still, and trans has no freedom left to set it with: the symmetric bite fixes
+// everything there. So trans sets it and the cis fit is asked to match.
+function aimFrom(q, L){
+  const a = [];
+  for(let k=0;k<q.series.length;k++){
+    const r = poseAt(q.A,q.S,q.series[k],false,q.lo,q.hi,L.m,L.sg,L.pb,1.3,undefined);
+    if(r) a.push(r.bnd);
+  }
+  if(!a.length) return CHI;
+  a.sort((x,y)=>x-y);
+  return a[a.length>>1];
+}
+// Fit the law once, at load. A law is admissible only if it clears every frame on its own,
+// angle floor included: the point of fitting over the whole run is that no frame is left to
+// be rescued by easing something. Travel is not a criterion, because it cannot be one: the
+// mean of the two oxygen distances has to equal the number beside the panel, so every
+// admissible law moves the head the same amount and that amount is the trajectory's. What
+// the fit chooses on is the bond angle at R, which it holds as near constant and as near
+// trans's as the reach law allows.
+function fitCis(q, br, s0, s1, ds, c0, c1, dc, every){
+  let win = null;
+  for(let s=s0; s<=s1+1e-9; s+=ds) for(let c=c0; c<=c1+1e-9; c+=dc){
+    const L = {m:br.m, sg:br.sg, pb:br.pb, sd:br.sd, s:s, c:c};
+    let n=0, b1=0, b2=0, ov=0, tl=0, mvs=0, bad=false, pv=null;
+    for(let k=0;k<q.series.length;k+=every){
+      const r = cisPose(q.A, q.S, q.series[k], q.lo, q.hi, L, MINB);
+      if(!r){ bad=true; break; }
+      n++; b1 += r.bnd; b2 += r.bnd*r.bnd; ov += r.ovpen; tl += r.t*r.t;
+      if(pv) mvs += Math.hypot(r.Oa[0]-pv.Oa[0], r.Oa[1]-pv.Oa[1]);
+      pv = r;
+    }
+    if(bad || n < 2) continue;
+    const mean = b1/n, varr = Math.max(0, b2/n - mean*mean), dv = mean - AIM;
+    const sc = 6.0*varr + 1.0*dv*dv + ov/n + 0.10*tl/n + 0.004*mvs/(n-1)/every;
+    if(!win || sc < win.sc) win = {s:s, c:c, sc:sc};
+  }
+  return win;
+}
+// One frame in a panel, on the branch and the law that panel is locked to. The elbow is part
+// of the lock, so the other one is only ever reached if the locked one cannot place a frame
+// at all, and the angle floor eases only there: a tight angle on a frame beats a drawing that
+// stops matching the number beside it.
+function solveOne(q, L, dnm){
+  for(const mb of [MINB, 96*D2R, 84*D2R, 70*D2R, 0]){
+    if(q.cis){
+      const r = cisPose(q.A,q.S,dnm,q.lo,q.hi,L,mb)
+             || cisPose(q.A,q.S,dnm,q.lo,q.hi,{...L, pb:-L.pb},mb);
+      if(r) return r;
+    } else {
+      const r = poseAt(q.A,q.S,dnm,false,q.lo,q.hi,L.m,L.sg,L.pb,1.3,mb)
+             || poseAt(q.A,q.S,dnm,false,q.lo,q.hi,L.m,L.sg,-L.pb,1.3,mb);
+      if(r) return r;
+    }
+  }
+  return null;
+}
+
+// Each panel keeps one mirror, one base kink, one elbow and, in cis, one tilt side and one
+// reach law for the whole run. These are the discrete choices: left free per frame the search
+// swaps between them and the construct flips. With the angle at R held near tetrahedral the
+// two panels cannot share a base kink, so what is matched instead is the thing that was
+// wanted from sharing it: the ligand sets off toward the site in both.
+function lockBranches(pe, pz){
+  for(const q of [pe, pz]){
+    let win = null;
+    for(let m=-1;m<=1;m+=2) for(let sg=-1;sg<=1;sg+=2) for(let pb=-1;pb<=1;pb+=2)
+    for(const sd of (q.cis?[-1,1]:[0])){
+      const br = {m:m, sg:sg, pb:pb, sd:sd};
+      let cand = null;
+      if(q.cis){
+        const f = fitCis(q, br, 0.55, 1.25, 0.10, -2.0, 5.5, 0.50, 6);
+        if(f) cand = {m:m, sg:sg, pb:pb, sd:sd, ok:q.series.length, tot:f.sc};
+      } else {
+        let ok=0, tot=0;
+        for(let k=0;k<q.series.length;k++){
+          const r = poseAt(q.A,q.S,q.series[k],false,q.lo,q.hi,m,sg,pb,1.3,undefined);
+          if(r){ ok++; tot += r.sc; }
+        }
+        if(ok) cand = {m:m, sg:sg, pb:pb, sd:sd, ok:ok, tot:tot};
+      }
+      if(cand && (!win || cand.ok>win.ok || (cand.ok===win.ok && cand.tot<win.tot))) win = cand;
+    }
+    if(!win) continue;
+    if(!q.cis) AIM = aimFrom(q, win);
+    if(q.cis){
+      const f = fitCis(q, win, 0.55, 1.25, 0.05, -2.0, 5.5, 0.20, 2)
+             || fitCis(q, win, 0.50, 1.40, 0.05, -2.5, 6.0, 0.25, 4)
+             || fitCis(q, win, 0.55, 1.25, 0.10, -2.0, 5.5, 0.50, 6);
+      if(f){ const g = fitCis(q, win, Math.max(0.40,f.s-0.05), f.s+0.05, 0.01,
+                                      f.c-0.20, f.c+0.20, 0.04, 1); if(g) f.s=g.s, f.c=g.c; }
+      if(f){ win.s = f.s; win.c = f.c; }
+    }
+    LOCK[q.id] = win;
+  }
+}
+// Solve every frame once, at load, and keep the result. Both panels are now closed forms in
+// the number beside them, so a frame looks the same whichever way it was reached: playing
+// forward, scrubbing back, or landing on it cold.
+function buildTrack(q){
+  const L = LOCK[q.id]; if(!L) return;
+  const n = q.series.length, tr = new Array(n).fill(null);
+  for(let k=0;k<n;k++) tr[k] = solveOne(q, L, q.series[k]);
+  for(let k=0;k<n;k++) if(!tr[k]) for(let d=1;d<n;d++){
+    if(tr[k-d]){ tr[k]=tr[k-d]; break; }
+    if(tr[k+d]){ tr[k]=tr[k+d]; break; }
+  }
+  TRACK[q.id] = tr;
+}
+
+function mol(g, A, S, f, cis, col, xlo, xhi){
+  const best = TRACK[g.id] ? TRACK[g.id][f] : null;
+  if(!best) return;                               // keep the last good pose rather than blank
+
+  const {P1,P2,Rn,Cc,Oa,Ob} = best;
+
+  const ln=(p,w)=>`<line x1="${p[0][0].toFixed(1)}" y1="${p[0][1].toFixed(1)}" x2="${p[1][0].toFixed(1)}" y2="${p[1][1].toFixed(1)}" stroke="${col}" stroke-width="${w||2.2}" stroke-linecap="round"/>`;
+  const dbl=(a,b,t1,t2,sd)=>{ const [p,q]=seg(a,b,t1,t2);
+    const ex=q[0]-p[0], ey=q[1]-p[1], Lg=Math.hypot(ex,ey)||1;
+    const nx=-ey/Lg*3.0*sd, ny=ex/Lg*3.0*sd;
+    return ln([p,q],2.2)+ln([[p[0]+nx,p[1]+ny],[q[0]+nx,q[1]+ny]],1.9); };
+  const atom=(p,t)=>`<text x="${p[0].toFixed(1)}" y="${(p[1]+4.6).toFixed(1)}" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="13.5" font-weight="500" fill="${col}">${t}</text>`;
+  const neg=p=>`<text x="${(p[0]+10).toFixed(1)}" y="${(p[1]-5.5).toFixed(1)}" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="13" fill="${col}">&#8722;</text>`;
+  const ringP=(c,a)=>`<polygon points="${hex(c,RR,a)}" fill="var(--raise)" stroke="${col}" stroke-width="2.2" stroke-linejoin="round"/>`
+    +`<circle cx="${c[0].toFixed(1)}" cy="${c[1].toFixed(1)}" r="${(RR*0.56).toFixed(1)}" fill="none" stroke="${col}" stroke-width="1.6" opacity=".8"/>`;
+
+  let o = "";
+  for(const O of [Oa,Ob]){ const [p,q]=seg(O,[S.x,S.y],10,13);
+    o += `<line x1="${p[0].toFixed(1)}" y1="${p[1].toFixed(1)}" x2="${q[0].toFixed(1)}" y2="${q[1].toFixed(1)}" stroke="var(--dim)" stroke-width="1.3" stroke-dasharray="3 4" opacity=".85"/>`; }
+  o += `<polyline points="${A.x.toFixed(1)},${A.y.toFixed(1)} ${best.v1[0].toFixed(1)},${best.v1[1].toFixed(1)} ${P1[0].toFixed(1)},${P1[1].toFixed(1)}" fill="none" stroke="${col}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>`;
+  const b=seg(best.na,best.nb,9.5,9.5), nd=Math.hypot(best.nb[0]-best.na[0], best.nb[1]-best.na[1])||1;
+  const ndx=(best.nb[0]-best.na[0])/nd, ndy=(best.nb[1]-best.na[1])/nd, of=3.2;
+  o += ln(seg(best.c1,best.na,0,9.5)) + ln(seg(best.nb,best.c2,9.5,0))
+     + ln([[b[0][0]-ndy*of,b[0][1]+ndx*of],[b[1][0]-ndy*of,b[1][1]+ndx*of]],2.0)
+     + ln([[b[0][0]+ndy*of,b[0][1]-ndx*of],[b[1][0]+ndy*of,b[1][1]-ndx*of]],2.0)
+     + ringP(best.r1, Math.atan2(P1[1]-best.c1[1], P1[0]-best.c1[0]))
+     + ringP(best.r2, Math.atan2(P2[1]-best.c2[1], P2[0]-best.c2[0]))
+     + atom(best.na,"N") + atom(best.nb,"N");
+  o += ln(seg(P2,Rn,0,10)) + atom(Rn,"R") + ln(seg(Rn,Cc,10,0));
+  o += ln(seg(Cc,Oa,0,10)) + dbl(Cc,Ob,0,10,1) + atom(Oa,"O") + atom(Ob,"O") + neg(Oa);
+  g.innerHTML = o;
+}
+
+const TW=1120,TH=150,TL=48,TR=18,TT=12,TB=36;
+const px=k=>TL+(k/(N-1))*(TW-TL-TR), py=d=>TT+(TH-TT-TB)*(1-d/DMAX);
+const pts=a=>a.map((d,k)=>px(k).toFixed(1)+","+py(d).toFixed(1)).join(" ");
+$("pz").setAttribute("points",pts(D.cis)); $("pe").setAttribute("points",pts(D.trans));
+$("band").setAttribute("y",py(COORD_NM)); $("band").setAttribute("height",py(0)-py(COORD_NM));
+let g="";
+for(const v of [0,0.4,0.8,1.2,1.6])
+  g+=`<line x1="${TL}" y1="${py(v)}" x2="${TW-TR}" y2="${py(v)}" stroke="var(--line)" stroke-width="1"/>`
+   +`<text x="${TL-7}" y="${py(v)+4}" font-family="IBM Plex Mono,monospace" font-size="10" fill="var(--dim)" text-anchor="end">${v.toFixed(1)}</text>`;
+g+=`<text x="${TL+6}" y="${TT+11}" font-family="IBM Plex Mono,monospace" font-size="10" fill="var(--dim)" text-anchor="start">nm</text>`;
+g+=`<text x="${TW-TR-6}" y="${py(COORD_NM)-6}" font-family="IBM Plex Mono,monospace" font-size="10" fill="var(--dim)" text-anchor="end">within Mg coordination</text>`;
+for(let s=0;s<=5;s++)
+  g+=`<text x="${px(s/5*(N-1))}" y="${TH-11}" font-family="IBM Plex Mono,monospace" font-size="10" fill="var(--dim)" text-anchor="${s==5?"end":"middle"}">${s==5?"5 ns":s}</text>`;
+$("grid").innerHTML=g;
+
+const PE = {id:"ge", A:AE,  S:SE, cis:false, lo:6,    hi:PW-6,   series:D.trans};
+const PZ = {id:"gz", A:AZ_, S:SZ, cis:true,  lo:PW+6, hi:2*PW-6, series:D.cis};
+function render(){
+  const e=D.trans[i], z=D.cis[i];
+  if(!LOCK.ge){ lockBranches(PE, PZ); buildTrack(PE); buildTrack(PZ); }
+  mol($("ge"),AE,SE,i,false,"var(--blocked)",6,PW-6);
+  mol($("gz"),AZ_,SZ,i,true,"var(--open)",PW+6,2*PW-6);
+  $("de").textContent=e.toFixed(3)+" nm"; $("dz").textContent=z.toFixed(3)+" nm";
+  $("clock").textContent=(i/(N-1)*NS).toFixed(2)+" ns";
+  $("ph").setAttribute("x1",px(i)); $("ph").setAttribute("x2",px(i));
+  $("scrub").value=i/(N-1)*100;
+}
+function step(){ if(!playing)return; i=(i+1)%N; render(); timer=setTimeout(()=>requestAnimationFrame(step),28); }
+function setPlay(on){ playing=on; $("play").textContent=on?"Pause":"Play";
+  if(on) step(); else clearTimeout(timer); }
+$("play").addEventListener("click",()=>{ held=playing; setPlay(!playing); });   // held = viewer paused it
+$("scrub").addEventListener("input",e=>{ held=true; setPlay(false);
+  i=Math.round(e.target.value/100*(N-1)); render(); });
+render();
+
+// runs itself once it is on screen; stops when it scrolls away; yields to the viewer
+const calm = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+if(!calm){
+  if("IntersectionObserver" in window){
+    new IntersectionObserver(es=>{ for(const e of es){
+      if(e.isIntersecting){ if(!held && !playing) setPlay(true); }
+      else if(playing) setPlay(false);
+    }}, {threshold:0.3}).observe(document.querySelector(".rig"));
+  } else setPlay(true);
+}
+
+/* mailto: a sandboxed frame or a device with no mail handler swallows the
+   navigation, so every click also puts the address on the clipboard. */
+(function(){
+  function flash(a){
+    var prev = a.nextElementSibling;
+    if (prev && prev.className === "copied") prev.remove();
+    var n = document.createElement("span");
+    n.className = "copied"; n.textContent = "address copied";
+    a.insertAdjacentElement("afterend", n);
+    setTimeout(function(){ n.remove(); }, 2000);
+  }
+  function copy(t){
+    if (navigator.clipboard && navigator.clipboard.writeText)
+      return navigator.clipboard.writeText(t);
+    return new Promise(function(res, rej){
+      try {
+        var ta = document.createElement("textarea");
+        ta.value = t; ta.setAttribute("readonly", "");
+        ta.style.position = "fixed"; ta.style.top = "0"; ta.style.opacity = "0";
+        document.body.appendChild(ta); ta.select(); ta.setSelectionRange(0, t.length);
+        var ok = document.execCommand("copy");
+        ta.remove(); ok ? res() : rej(new Error("execCommand"));
+      } catch(e){ rej(e); }
+    });
+  }
+  var links = document.querySelectorAll('a[href^="mailto:"]');
+  for (var i = 0; i < links.length; i++) (function(a){
+    a.addEventListener("click", function(){
+      var addr = a.getAttribute("href").slice(7).split("?")[0];
+      copy(decodeURIComponent(addr)).then(function(){ flash(a); }, function(){});
+    });
+  })(links[i]);
+})();
+// ---------------------------------------------------------------- the cycle
+(function(){
+var S=document.getElementById('cycScene'), SIG=document.getElementById('cycSig'),
+    STG=document.getElementById('cycStage');
+if(!S) return;
+var RAD=Math.PI/180, U=11.0;
+var RR=1.40*U, CN=1.42*U, NN=1.25*U, LB2=1.82*U, LB1=1.51*U,
+    ARN=1.55*U, RC=1.55*U, COx=1.25*U, TET=109.5*RAD, OCO=120*RAD, CHI=133*RAD;
+var ANC={x:292,y:318}, A0=0, MG=null;          // the site is wherever trans chelates
+var GLASS=370, SURF=318, SITE=58;
+var DET={x:384,y:394}, CTL={x:728,y:394};     // the detector sits under the spot it watches
+var DYEPT=[383.7,163.9];                      // where a bound label sits, in the lit zone             // glass, TdT surface, active-site radius
+
+// ---- timeline, one base ------------------------------------------------
+var T=8.0;
+var t_cat=1.15, t_off=1.50, t_close=1.72, t_cl1=2.22,
+    t_open=5.45, t_op1=5.95, t_in0=3.76, t_dock=7.90, t_on=7.94;
+var FP=8.6;                                   // how long one crossing takes: deliberately not
+                                              // the cycle time, so the flow never locks to it
+var r_t0=7.03, r_app=3.77, r_hold=0.45, r_ret=3.65;  // the one that is turned away: reaches
+                                              // the shut site at 2.80, carries on from 3.25
+var t_sw=3.40;                                // the instant the flow changes over                   // the flow changes over to the next base
+var PH=[{k:0,a:0.00,b:1.72},{k:1,a:1.72,b:3.05},{k:2,a:3.05,b:5.45},{k:3,a:5.45,b:T}];
+var BASES=["A","C","T","G"];
+
+var add=function(p,a,L){ return [p[0]+L*Math.cos(a), p[1]+L*Math.sin(a)]; };
+var ease=function(x){ return x<=0?0:x>=1?1:x*x*(3-2*x); };
+// A trapezoidal speed profile, not a smoothstep: a nucleotide that has to be somewhere by a
+// certain moment should still travel at the speed everything else in solution travels at.
+var glide=function(x){ var a=0.15;
+  if(x<=0) return 0; if(x>=1) return 1;
+  if(x<a) return x*x/(2*a*(1-a));
+  if(x>1-a) return 1-(1-x)*(1-x)/(2*a*(1-a));
+  return (x-a/2)/(1-a); };
+var bez=function(p0,c,p1,u){ var m=1-u;
+  return [m*m*p0[0]+2*m*u*c[0]+u*u*p1[0], m*m*p0[1]+2*m*u*c[1]+u*u*p1[1]]; };
+// Walk a curve by arc length, not by its parameter. A Bezier's parameter runs faster through
+// the middle of the curve, which is what makes a nucleotide look like it darts.
+function arcBez(p0,c,p1){
+  var N=48, L=[0], px=p0[0], py=p0[1], k, q;
+  for(k=1;k<=N;k++){ q=bez(p0,c,p1,k/N);
+    L.push(L[k-1]+Math.hypot(q[0]-px,q[1]-py)); px=q[0]; py=q[1]; }
+  var tot=L[N]||1;
+  return function(u){ var d=cl(u,0,1)*tot, lo=0, hi=N, m;
+    while(hi-lo>1){ m=(lo+hi)>>1; if(L[m]<d) lo=m; else hi=m; }
+    return bez(p0,c,p1,(lo+(d-L[lo])/((L[hi]-L[lo])||1))/N); };
+}
+// One approach, used by whichever nucleotide is making it. The two that matter travel the
+// same curve from the same place at the same speed; the only difference is where it ends.
+var A_IN=arcBez([214,54],[566,142],[452,216]), A_LEN=352, A_V=85;
+var A_DUR=A_LEN/A_V, R_U=0.91;
+// Refused, it does not reverse: it carries on downstream the way everything else does.
+var R_OUT=arcBez([469,203],[600,176],[770,150]);
+// One drift for every nucleotide in solution: in over the top left, easing down to its own
+// level and carrying on across. No dives, nothing that swims.
+var drift=function(f,s){
+  var e=ease(s), x=f[1]+(880-f[1])*s;
+  var y=f[2]+(f[3]-f[2])*e+f[4]*Math.sin(2*Math.PI*f[5]*s);
+  var dx=880-f[1], dy=(f[3]-f[2])*6*s*(1-s)+f[4]*2*Math.PI*f[5]*Math.cos(2*Math.PI*f[5]*s);
+  return {p:[x,y], a:Math.atan2(dy,dx)+Math.PI};
+};
+var lerp=function(a,b,t){ return a+(b-a)*t; };
+var cl=function(x,a,b){ return x<a?a:x>b?b:x; };
+var seg=function(a,b,t1,t2){ var dx=b[0]-a[0],dy=b[1]-a[1],L=Math.hypot(dx,dy)||1;
+  return [[a[0]+dx/L*t1,a[1]+dy/L*t1],[b[0]-dx/L*t2,b[1]-dy/L*t2]]; };
+
+// ---- the construct -----------------------------------------------------
+// Real azobenzene, drawn to bond lengths. The flip is a swing about the N=N
+// axis through the linear C-N=N, so every bond keeps its length the whole way.
+function build(u){
+  var phi1=(120+2*(1-u))*RAD, psi=(120+118*(1-u))*RAD, A=[ANC.x,ANC.y];
+  var v1=add(A,A0,LB2), a1=A0+Math.PI+TET, P1=add(v1,a1,LB1), r1=a1;
+  var C1=add(P1,r1,2*RR), g1=add(P1,r1,RR), N1=add(C1,r1,CN);
+  var dN=r1+(Math.PI-phi1), N2=add(N1,dN,NN), dC2=dN+Math.PI+psi;
+  var C2=add(N2,dC2,CN), r2=dC2, g2=add(C2,r2,RR), P2=add(C2,r2,2*RR);
+  var Rn=add(P2,r2,ARN), dRC=r2+(Math.PI-CHI), Cc=add(Rn,dRC,RC);
+  return {A:A,v1:v1,P1:P1,g1:g1,C1:C1,N1:N1,N2:N2,C2:C2,g2:g2,P2:P2,Rn:Rn,Cc:Cc,
+          Oa:add(Cc,dRC-OCO/2,COx), Ob:add(Cc,dRC+OCO/2,COx), r1:r1, r2:r2, dRC:dRC};
+}
+// Trans chelates, so the metal sits on the bisector of the bite: that is what puts the
+// active site where it is, rather than the site being placed and the ligand stretched to it.
+(function(){ var g=build(1), m=add(g.Cc,g.dRC,2.113*U); MG={x:m[0], y:m[1]}; })();
+// Standard photochemistry notation: a wavy arrow for a photon. The excitation that makes a
+// bound dye glow and the two pulses that drive the switch all arrive the same way, from the
+// objective under the chip, so they are all drawn as one.
+function photon(x0,y0,x1,y1,col,lab,off){
+  var dx=x1-x0, dy=y1-y0, L=Math.hypot(dx,dy)||1, ux=dx/L, uy=dy/L, nx=-uy, ny=ux;
+  var n=Math.max(3,Math.round(L/15)), amp=4.4, d='', m=n*8;
+  for(var k=0;k<=m;k++){ var f=k/m, w=amp*Math.sin(f*n*Math.PI);
+    d+=(k?' L':'M')+(x0+ux*L*f+nx*w).toFixed(1)+' '+(y0+uy*L*f+ny*w).toFixed(1); }
+  var o='<path d="'+d+'" fill="none" stroke="'+col+'" stroke-width="1.7" stroke-linecap="round"/>';
+  o+='<path d="M'+x1.toFixed(1)+' '+y1.toFixed(1)+' l'+(( -ux*7+nx*4.6)).toFixed(1)+' '+((-uy*7+ny*4.6)).toFixed(1)+
+     ' M'+x1.toFixed(1)+' '+y1.toFixed(1)+' l'+((-ux*7-nx*4.6)).toFixed(1)+' '+((-uy*7-ny*4.6)).toFixed(1)+
+     '" fill="none" stroke="'+col+'" stroke-width="1.7" stroke-linecap="round"/>';
+  if(lab){ var lx=x0+dx*0.40+nx*off, ly=y0+dy*0.40+ny*off;
+    o+='<text x="'+lx.toFixed(1)+'" y="'+(ly+4.6).toFixed(1)+'" text-anchor="middle" '+
+      'font-family="IBM Plex Sans,sans-serif" font-size="13.5" font-style="italic" fill="'+col+
+      '">h&#957;</text>'; }
+  return o;
+}
+var hex=function(c,r,rot){ var p=""; for(var k=0;k<6;k++){ var t=rot+k*Math.PI/3;
+  p+=(k?" ":"")+(c[0]+r*Math.cos(t)).toFixed(1)+","+(c[1]+r*Math.sin(t)).toFixed(1);} return p; };
+var ln=function(p,w,col){ return '<line x1="'+p[0][0].toFixed(1)+'" y1="'+p[0][1].toFixed(1)+
+  '" x2="'+p[1][0].toFixed(1)+'" y2="'+p[1][1].toFixed(1)+'" stroke="'+col+
+  '" stroke-width="'+(w||2.2)+'" stroke-linecap="round"/>'; };
+
+function drawSwitch(u){
+  var g=build(u), col=u>0.5?"var(--blocked)":"var(--open)";
+  var o="";
+  if(u>0.93) for(var i=0;i<2;i++){ var O=i?g.Ob:g.Oa, q=seg(O,[MG.x,MG.y],7,11);
+    o+='<line x1="'+q[0][0].toFixed(1)+'" y1="'+q[0][1].toFixed(1)+'" x2="'+q[1][0].toFixed(1)+
+       '" y2="'+q[1][1].toFixed(1)+'" stroke="var(--dim)" stroke-width="1.1" stroke-dasharray="2.5 3.5"/>'; }
+  o+='<polyline points="'+g.A[0].toFixed(1)+','+g.A[1].toFixed(1)+' '+g.v1[0].toFixed(1)+','+
+     g.v1[1].toFixed(1)+' '+g.P1[0].toFixed(1)+','+g.P1[1].toFixed(1)+
+     '" fill="none" stroke="'+col+'" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>';
+  var b=seg(g.N1,g.N2,7,7), nd=Math.hypot(g.N2[0]-g.N1[0],g.N2[1]-g.N1[1])||1;
+  var nx=-(g.N2[1]-g.N1[1])/nd*2.4, ny=(g.N2[0]-g.N1[0])/nd*2.4;
+  o+=ln(seg(g.C1,g.N1,0,7),2.1,col)+ln(seg(g.N2,g.C2,7,0),2.1,col)
+   +ln([[b[0][0]-nx,b[0][1]-ny],[b[1][0]-nx,b[1][1]-ny]],1.9,col)
+   +ln([[b[0][0]+nx,b[0][1]+ny],[b[1][0]+nx,b[1][1]+ny]],1.9,col);
+  o+='<polygon points="'+hex(g.g1,RR,g.r1)+'" fill="var(--panel)" stroke="'+col+
+     '" stroke-width="2.1" stroke-linejoin="round"/>'
+   +'<circle cx="'+g.g1[0].toFixed(1)+'" cy="'+g.g1[1].toFixed(1)+'" r="'+(RR*.55).toFixed(1)+
+     '" fill="none" stroke="'+col+'" stroke-width="1.4" opacity=".8"/>'
+   +'<polygon points="'+hex(g.g2,RR,g.r2)+'" fill="var(--panel)" stroke="'+col+
+     '" stroke-width="2.1" stroke-linejoin="round"/>'
+   +'<circle cx="'+g.g2[0].toFixed(1)+'" cy="'+g.g2[1].toFixed(1)+'" r="'+(RR*.55).toFixed(1)+
+     '" fill="none" stroke="'+col+'" stroke-width="1.4" opacity=".8"/>';
+  var at=function(p,t){ return '<text x="'+p[0].toFixed(1)+'" y="'+(p[1]+3.9).toFixed(1)+
+    '" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" font-size="11" font-weight="500" fill="'+col+'">'+t+'</text>'; };
+  o+=at(g.N1,"N")+at(g.N2,"N");
+  o+=ln(seg(g.P2,g.Rn,0,8),2.1,col)+at(g.Rn,"R")+ln(seg(g.Rn,g.Cc,8,0),2.1,col);
+  o+=ln(seg(g.Cc,g.Oa,0,8),2.1,col)+ln(seg(g.Cc,g.Ob,0,8),2.1,col)+at(g.Oa,"O")+at(g.Ob,"O");
+  return o;
+}
+
+// ---- nucleotide ---------------------------------------------------------
+// base tag, three phosphates, dye on the terminal one. On incorporation the
+// base and the first phosphate join the strand; the rest leaves with the dye.
+var TAGW=25, TAGH=19, P1D=22, PSP=15, DYE=34;
+function tag(p,L,col,op){
+  return '<g opacity="'+op.toFixed(2)+'"><rect x="'+(p[0]-TAGW/2).toFixed(1)+'" y="'+(p[1]-TAGH/2).toFixed(1)+
+    '" width="'+TAGW+'" height="'+TAGH+'" rx="4" fill="var(--raise)" stroke="'+col+'" stroke-width="1.6"/>'+
+    '<text x="'+p[0].toFixed(1)+'" y="'+(p[1]+4.3).toFixed(1)+'" text-anchor="middle" '+
+    'font-family="IBM Plex Mono,monospace" font-size="12" font-weight="500" fill="'+col+'">'+L+'</text></g>';
+}
+function phos(p,ang,n,col,op){
+  var o='', c=[p[0]+P1D*Math.cos(ang), p[1]+P1D*Math.sin(ang)];
+  for(var k=0;k<n;k++){
+    o+='<circle cx="'+c[0].toFixed(1)+'" cy="'+c[1].toFixed(1)+'" r="4.6" fill="var(--panel)" stroke="'+
+       col+'" stroke-width="1.5" opacity="'+op.toFixed(2)+'"/>';
+    c=[c[0]+PSP*Math.cos(ang), c[1]+PSP*Math.sin(ang)];
+  }
+  return o;
+}
+function dye(c,lit,op){
+  var o='';
+  if(lit>0) o+='<circle cx="'+c[0].toFixed(1)+'" cy="'+c[1].toFixed(1)+'" r="'+(9+9*lit).toFixed(1)+
+    '" fill="var(--ink)" opacity="'+(0.13*lit*op).toFixed(3)+'"/>'
+    +'<circle cx="'+c[0].toFixed(1)+'" cy="'+c[1].toFixed(1)+'" r="'+(6+3*lit).toFixed(1)+
+    '" fill="var(--ink)" opacity="'+(0.34*lit*op).toFixed(3)+'"/>';
+  return o+'<circle cx="'+c[0].toFixed(1)+'" cy="'+c[1].toFixed(1)+'" r="5" fill="var(--ink)"'+
+    ' stroke="var(--ink)" stroke-width="1.5" opacity="'+op.toFixed(2)+'"/>';
+}
+function nucleotide(p,ang,L,np,lit,op,col){
+  var o=tag(p,L,col,op)+phos(p,ang,np,col,op);
+  if(np>=3) o+=dye([p[0]+(P1D+PSP*2+DYE)*Math.cos(ang), p[1]+(P1D+PSP*2+DYE)*Math.sin(ang)],lit,op);
+  return o;
+}
+// the leaving group: the two outer phosphates and the dye, no base
+function leaving(c,ang,lit,op){
+  var o='';
+  for(var k=0;k<2;k++) o+='<circle cx="'+(c[0]+k*PSP*Math.cos(ang)).toFixed(1)+'" cy="'+
+    (c[1]+k*PSP*Math.sin(ang)).toFixed(1)+'" r="4.6" fill="var(--panel)" stroke="var(--dim)" '+
+    'stroke-width="1.5" opacity="'+op.toFixed(2)+'"/>';
+  return o+dye([c[0]+(PSP+DYE)*Math.cos(ang), c[1]+(PSP+DYE)*Math.sin(ang)],lit,op);
+}
+
+// ---- the strand TdT is extending ---------------------------------------
+// TdT is template-independent, so there is one strand and no template to draw.
+var SEAT=[452,216], SANG=217.4*RAD, SDX=40, SDY=10;
+function strand(g, added){
+  var o='';
+  for(var k=0;k<7;k++){
+    var x=SEAT[0]+(k+g)*SDX, y=SEAT[1]+(k+g)*SDY;
+    if(x>814) continue;
+    var op=x>716?cl((812-x)/96,0,1):1;
+    if(k>0) o+='<line x1="'+(x-SDX+TAGW/2).toFixed(1)+'" y1="'+(y-SDY+2).toFixed(1)+'" x2="'+
+      (x-TAGW/2).toFixed(1)+'" y2="'+(y-2).toFixed(1)+
+      '" stroke="var(--dim)" stroke-width="1.6" opacity="'+op.toFixed(2)+'"/>';
+    o+=tag([x,y], BASES[((added-k)%4+4)%4], "var(--dim)", op);
+  }
+  return o;
+}
+
+// ---- one frame of the scene --------------------------------------------
+function uAt(t){
+  if(t<t_close) return 0;
+  if(t<t_cl1)   return ease((t-t_close)/(t_cl1-t_close));
+  if(t<t_open)  return 1;
+  if(t<t_op1)   return 1-ease((t-t_open)/(t_op1-t_open));
+  return 0;
+}
+var litAt=function(t){ return (t<t_off || t>=t_on)?1:0; };
+function drawScene(t, ci){
+  var o='', u=uAt(t), base=BASES[ci%4], nextB=BASES[(ci+1)%4];
+  var added=(t>=t_cat)?ci:ci-1, g=(t<t_cat)?1:ease((t-t_cat)/0.55);
+
+  // The detector watches one spot, whether or not anything is sitting in it, so the collection
+  // cone is always drawn. What changes is whether there is anything down there to emit.
+  var ex=DET.x-DYEPT[0], ey=DET.y-DYEPT[1], eL=Math.hypot(ex,ey)||1, ux=-ey/eL*7, uy=ex/eL*7;
+  o+='<path d="M'+(DYEPT[0]+ux).toFixed(1)+' '+(DYEPT[1]+uy).toFixed(1)+' L'+(DET.x+ux*2.8).toFixed(1)+
+     ' '+(DET.y+uy*2.8).toFixed(1)+' L'+(DET.x-ux*2.8).toFixed(1)+' '+(DET.y-uy*2.8).toFixed(1)+
+     ' L'+(DYEPT[0]-ux).toFixed(1)+' '+(DYEPT[1]-uy).toFixed(1)+'Z" fill="var(--ink)" opacity=".045"/>';
+  // the active site, tinted by whether anything can get into it
+  var tint=u>0.5?"var(--blocked)":"var(--open)";
+  o+='<circle cx="'+MG.x+'" cy="'+MG.y+'" r="'+SITE+'" fill="var(--raise)"/>'
+   +'<circle cx="'+MG.x+'" cy="'+MG.y+'" r="'+SITE+'" fill="'+tint+'" opacity="'+
+     (0.05+0.05*Math.abs(u-0.5)*2).toFixed(3)+'"/>'
+   +'<circle cx="'+MG.x+'" cy="'+MG.y+'" r="'+SITE+'" fill="none" stroke="var(--dim)" '+
+     'stroke-width="1.1" stroke-dasharray="4 5"/>';
+  // the illuminated slice at the bottom of the well: only a dye held down here is seen
+  o+='<rect x="160" y="'+(GLASS-176)+'" width="680" height="176" fill="url(#cycGlow)"/>';
+  o+=strand(g, added);
+
+  // The pulse arrives the way a scheme draws one: in from the upper left, square onto the
+  // N=N it is absorbed by. No beam, so the figure claims nothing about the delivery optics.
+  var gm=build(1), mid=[(gm.N1[0]+gm.N2[0])/2,(gm.N1[1]+gm.N2[1])/2];   // the hinge never moves
+  for(var f=0;f<2;f++){
+    var ft=f?t_open:t_close, col=f?"var(--open)":"var(--blocked)", d=t-ft;
+    if(d<0||d>0.46) continue;
+    var k=d/0.46;
+    o+='<circle cx="'+mid[0].toFixed(1)+'" cy="'+mid[1].toFixed(1)+'" r="'+(24+56*k).toFixed(1)+
+       '" fill="'+col+'" opacity="'+(0.15*(1-k)).toFixed(3)+'"/>';
+    o+='<circle cx="'+MG.x+'" cy="'+MG.y+'" r="'+(14+54*k).toFixed(1)+'" fill="none" stroke="'+col+
+       '" stroke-width="'+(3.4*(1-k)+0.6).toFixed(2)+'" opacity="'+(0.85*(1-k)).toFixed(3)+'"/>';
+    o+=photon(226,150,mid[0]-28,mid[1]-28,col,1,-21);
+  }
+
+  // Nucleotides wash in over the top left of the well, arc down through it and leave again.
+  // Only one base is in the flow at a time: the letter each one carries is whichever base was
+  // flowing when it entered, so the changeover arrives as a wash rather than a swap.
+  // Nucleotides come in over the top left and drift across the well at their own level, so
+  // they stay spread out the way they were rather than filing along one line. One base at a
+  // time: each carries whichever base was flowing when it entered.
+  // [phase, entry x, entry y, level it settles to, wobble, wobble turns]
+  var NFL=[[0.00,176,50,106,6,1.5],[0.22,208,64,174,5,2],[0.43,168,76,72,7,1.5],
+           [0.64,224,48,140,4,2],[0.83,190,58,92,6,1.5]];
+  for(var i=0;i<NFL.length;i++){
+    var f=NFL[i], gg=(ci*T+t)/FP-f[0], k0=Math.floor(gg), sp=gg-k0;
+    var ea=(k0+f[0])*FP, ec=Math.floor(ea/T), el=ea-ec*T;   // when it entered, and on which base
+    var lt=BASES[(((el>=t_sw?ec+1:ec))%4+4)%4];
+    var pp=drift(f,sp), fo=Math.min(cl(sp/0.09,0,1), cl((1-sp)/0.09,0,1));
+    o+=nucleotide(pp.p, pp.a, lt, 3, 0, 0.42*fo, "var(--dim)");
+  }
+  if(t>t_sw-0.45 && t<t_sw+1.70){
+    var fo2=cl(Math.min((t-(t_sw-0.45))/0.4,((t_sw+1.70)-t)/0.5),0,1);
+    o+='<text x="500" y="40" text-anchor="middle" font-family="IBM Plex Mono,monospace" '+
+       'font-size="11" fill="var(--ink)" opacity="'+fo2.toFixed(2)+'">Cycles to '+nextB+'</text>';
+  }
+
+  // One of the base still in the flow makes that same approach while the site is shut. It is
+  // the same curve at the same speed; it simply cannot finish, so it waits, is passed over, and
+  // then carries on downstream the way everything else does. Its approach starts in the
+  // previous cycle, which is why the part you watch is the arrival rather than the journey.
+  var tr=(t-r_t0+T)%T;
+  if(tr<r_app+r_hold+r_ret){
+    var rp = tr<r_app             ? A_IN(R_U*tr/r_app)
+           : tr<r_app+r_hold      ? A_IN(R_U)
+           : R_OUT((tr-r_app-r_hold)/r_ret);
+    var rb = (t>=r_t0) ? BASES[(ci+1)%4] : base;      // one letter the whole way across the wrap
+    var rf = Math.min(cl(tr/0.6,0,1), cl((r_app+r_hold+r_ret-tr)/1.1,0,1));
+    o+=nucleotide(rp, SANG, rb, 3, 0, 0.45*rf, "var(--dim)");
+  }
+
+  // the base for this cycle: docked and lit, then incorporated
+  if(t<t_cat) o+=nucleotide(SEAT, SANG, base, 3, 1, 1, "var(--ink)");
+  else if(t<t_off){
+    var kc=(t-t_cat)/(t_off-t_cat);
+    o+=nucleotide([SEAT[0]+g*SDX, SEAT[1]+g*SDY], SANG, base, 3-Math.floor(kc*2.4), 1, 1, "var(--ink)");
+  }
+  // the label, once it is off: the pulse has already ended
+  if(t>=t_off && t<t_off+2.3){
+    var d2=t-t_off, op=cl(1-(d2-1.5)/0.8,0,1);
+    o+=leaving([MG.x-14-9*d2, MG.y-12-50*d2], 208*RAD, 0, op);
+  }
+  // the next base, delivered while the site reopens
+  if(t>=t_in0 && t<t_dock){
+    var seat=cl((t-(t_dock-0.45))/0.45,0,1);        // only the last moment marks it out
+    o+=nucleotide(A_IN((t-t_in0)/A_DUR), SANG, nextB, 3, 0,
+                  lerp(0.45,1,seat)*Math.min(1,(t-t_in0)/0.6), seat>0?"var(--ink)":"var(--dim)");
+  } else if(t>=t_dock) o+=nucleotide(SEAT, SANG, nextB, 3, litAt(t), 1, "var(--ink)");
+
+  o+=drawSwitch(u);
+  // The two ends of the loop. The detector is lit exactly while the label is, so the moment
+  // it goes dark is the detection, and the controller fires off the back of it.
+  var dl=litAt(t);
+  o+='<circle cx="'+DET.x+'" cy="'+DET.y+'" r="6" fill="'+(dl?'var(--ink)':'none')+
+     '" stroke="var(--dim)" stroke-width="1.5"/>';
+  var dd=t-t_off;
+  if(dd>=0&&dd<0.55){ var dk=dd/0.55;
+    o+='<circle cx="'+DET.x+'" cy="'+DET.y+'" r="'+(7+17*dk).toFixed(1)+'" fill="none" stroke="var(--ink)"'+
+       ' stroke-width="'+(2.4*(1-dk)+0.5).toFixed(2)+'" opacity="'+(0.9*(1-dk)).toFixed(3)+'"/>'; }
+  if(dd>=0&&dd<1.1) o+='<text x="470" y="398" font-family="IBM Plex Mono,monospace" font-size="11" '+
+     'fill="var(--ink)" opacity="'+cl((1.1-dd)/0.35,0,1).toFixed(2)+'">incorporation detected</text>';
+  var cf=null;
+  for(var q=0;q<2;q++){ var qt=q?t_open:t_close, qd=t-qt;
+    if(qd>=0&&qd<0.55) cf={k:qd/0.55, col:q?"var(--open)":"var(--blocked)"}; }
+  o+='<circle cx="'+CTL.x+'" cy="'+CTL.y+'" r="6" fill="'+(cf?cf.col:'none')+
+     '" stroke="var(--dim)" stroke-width="1.5"/>';
+  if(cf) o+='<circle cx="'+CTL.x+'" cy="'+CTL.y+'" r="'+(7+17*cf.k).toFixed(1)+'" fill="none" stroke="'+
+     cf.col+'" stroke-width="'+(2.4*(1-cf.k)+0.5).toFixed(2)+'" opacity="'+(0.9*(1-cf.k)).toFixed(3)+'"/>';
+  o+='<circle cx="'+MG.x+'" cy="'+MG.y+'" r="13" fill="var(--dim)"/>'
+   +'<text x="'+MG.x+'" y="'+(MG.y+4.4)+'" text-anchor="middle" font-family="IBM Plex Sans,sans-serif" '+
+     'font-size="11.5" font-weight="500" fill="var(--ground)">Mg</text>';
+  return o;
+}
+
+// ---- the signal the controller actually runs on ------------------------
+var TX0=92, TX1=972, TY_HI=52, TY_LO=100;
+var tx=function(t){ return TX0+(t/T)*(TX1-TX0); };
+function buildSig(){
+  var o='', lab=function(x,y,s,an,col){ return '<text x="'+x+'" y="'+y+
+    '" text-anchor="'+(an||"middle")+'" font-family="IBM Plex Mono,monospace" font-size="10" fill="'+
+    (col||"var(--dim)")+'">'+s+'</text>'; };
+  for(var i=0;i<PH.length;i++){
+    o+='<rect id="cycSeg'+i+'" x="'+tx(PH[i].a).toFixed(1)+'" y="14" width="'+
+       (tx(PH[i].b)-tx(PH[i].a)-2).toFixed(1)+'" height="5" rx="2.5" fill="var(--line)"/>';
+    o+=lab((tx(PH[i].a)+tx(PH[i].b))/2, 11, "0"+(i+1)+" "+["Detect","Switch","Block","Release"][i]);
+  }
+  o+='<path d="M'+tx(0)+' '+TY_HI+' H'+tx(t_off).toFixed(1)+' V'+TY_LO+' H'+tx(t_on).toFixed(1)+
+     ' V'+TY_HI+' H'+tx(T).toFixed(1)+'" fill="none" stroke="var(--ink)" stroke-width="1.8" '+
+     'stroke-linejoin="round" opacity=".85"/>';
+  o+=lab(TX0-8, TY_HI+4, "fluorescence", "end")+lab(TX0-8, TY_LO+4, "dark", "end");
+  o+=lab(tx(t_off)-9, 44, "pulse ends &#183; detected", "end", "var(--ink)");
+  var mk=function(tt,col,s){ return '<line x1="'+tx(tt).toFixed(1)+'" y1="30" x2="'+tx(tt).toFixed(1)+
+    '" y2="112" stroke="'+col+'" stroke-width="1.6" stroke-dasharray="3 3"/>'+
+    lab(tx(tt), 125, s, "middle", col); };
+  o+=mk(t_close,"var(--blocked)","closing pulse")+mk(t_open,"var(--open)","opening pulse");
+  o+='<circle cx="'+tx(t_off).toFixed(1)+'" cy="'+TY_LO+'" r="3.8" fill="var(--ink)"/>';
+  o+='<line id="cycPh" x1="'+TX0+'" y1="14" x2="'+TX0+'" y2="112" stroke="var(--ink)" stroke-width="1"/>';
+  SIG.innerHTML=o;
+}
+
+// ---- driver -------------------------------------------------------------
+var P=document.getElementById('cycPlay'), SC=document.getElementById('cycScrub'),
+    RD=document.getElementById('cycRead'), LI=document.querySelectorAll('.steps li');
+var now=0, run=false, raf=null, last=0, held=false;
+function phaseOf(t){ for(var i=PH.length-1;i>=0;i--) if(t>=PH[i].a) return i; return 0; }
+function paint(){
+  var ci=Math.floor(now/T), t=now-ci*T, ph=phaseOf(t);
+  S.innerHTML=drawScene(t, ci);
+  var pl=document.getElementById('cycPh');
+  if(pl){ pl.setAttribute('x1',tx(t).toFixed(1)); pl.setAttribute('x2',tx(t).toFixed(1)); }
+  for(var i=0;i<4;i++){
+    var sg=document.getElementById('cycSeg'+i);
+    if(sg) sg.setAttribute('fill', i===ph?"var(--ink)":"var(--line)");
+    if(LI[i]) LI[i].className = i===ph?"on":"";
+  }
+  if(RD) RD.textContent="base "+BASES[ci%4]+" · "+["detect","switch","block","release"][ph];
+  if(SC) SC.value=(t/T*100).toFixed(1);
+}
+function step(ts){
+  if(!run) return;
+  if(!last) last=ts;
+  now+=Math.min(0.05,(ts-last)/1000); last=ts;
+  paint(); raf=requestAnimationFrame(step);
+}
+function setRun(on){
+  run=on; if(P) P.textContent=on?"Pause":"Play";
+  if(on){ last=0; raf=requestAnimationFrame(step); } else if(raf) cancelAnimationFrame(raf);
+}
+if(P) P.addEventListener('click',function(){ held=run; setRun(!run); });
+if(SC) SC.addEventListener('input',function(e){
+  held=true; setRun(false);
+  now=Math.floor(now/T)*T + (e.target.value/100)*T; paint();
+});
+// On a phone the walls and the side labels are decoration: zoom to the part that moves.
+var MQ=window.matchMedia?window.matchMedia("(max-width:640px)"):null;
+function fit(){ STG.setAttribute('viewBox', (MQ&&MQ.matches)?"196 36 552 384":"0 26 1000 394"); }
+fit();
+if(MQ){ if(MQ.addEventListener) MQ.addEventListener('change',fit); else if(MQ.addListener) MQ.addListener(fit); }
+buildSig();
+now=3.9; paint();                                   // open on the blocked state
+var calm=window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+if(!calm){
+  if("IntersectionObserver" in window){
+    new IntersectionObserver(function(es){
+      for(var i=0;i<es.length;i++){
+        if(es[i].isIntersecting){ if(!held) setRun(true); } else setRun(false);
+      }
+    },{threshold:.25}).observe(STG);
+  } else setRun(true);
+}
+})();
+
+</script>
+
+</body>
+</html>
